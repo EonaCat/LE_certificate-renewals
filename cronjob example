@@ -1,0 +1,8 @@
+Manual execution:
+
+bash renewalsslcertificates.sh --email info@example.com --webroot /var/www/ --domain example.com
+
+Via crontab:
+
+#update certificates for websites
+1 0 1 * * /var/script/bash renewalsslcertificates.sh --email info@example.com --webroot /var/www/ --domain example.com > /dev/null 2>&1
